@@ -14,7 +14,7 @@ export default function PokemonCardList(props){
                 <div className="pokemon-type">
                     {pokemon.types.map((type, index) =>{
                     return(
-                        <div key={index} className={`type-${type.type.name}`}> 
+                        <div key={index} className={`type-${type.type.name} type-container`}> 
                             {type.type.name} 
                         </div>                    
                         )

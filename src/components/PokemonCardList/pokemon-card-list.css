@@ -7,6 +7,9 @@
     margin-bottom: 30px;
     transition: .4s;
     cursor: pointer;
+    background-color: #f4f3ee;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 
     display: flex;
 
@@ -31,4 +34,63 @@
 .pokemon-type{
     display: flex;
     flex: row;
+    padding-top: 10px;
+}
+
+.type-container{
+    width: 55px;
+    height: 22px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 20px;
+    color: white;
+    padding: 0 3px;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* cores das tags type */
+.type-fire{
+    background-color: var(--fire-tag);
+}
+
+.type-poison{
+    background-color: var(--poison-tag);
+}
+
+.type-grass{
+    background-color: var(--grass-tag);
+}
+
+.type-water{
+    background-color: var(--water-tag);
+}
+
+.type-bug{
+    background-color: var(--bug-tag);
+}
+
+.type-electric{
+    background-color: var(--eletric-tag);
+}
+
+.type-ground{
+    background-color: var(--ground-tag);
+}
+
+.type-flying{
+    background-color: var(--flying-tag);
+}
+
+.type-fairy{
+    background-color: var(--fairy-tag);
+}
+
+.type-normal{
+    background-color: var(--normal-tag);
 }

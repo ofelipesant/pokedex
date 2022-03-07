@@ -1,11 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 :root{
  --red: #ef233c;
  --blue: #5495e1; 
  --blue-hover: #0068af;
 
- --font-primary: 'Montserrat', sans-serif;
+ --fire-tag: #d8572a;
+ --poison-tag: #822faf;
+ --grass-tag: #588157;
+ --water-tag: #0096c7;
+ --bug-tag: #aaba78;
+ --eletric-tag: #edc531;
+ --ground-tag: #926c15;
+ --flying-tag: #90e0ef;
+ --fairy-tag: #ffafcc;
+ --normal-tag: #c9ada7;
+
+
 }
 
 *{
