@@ -2,7 +2,7 @@ import './search-bar.css'
 import { useState } from 'react'
 import { FiSearch } from "react-icons/fi";
 import {BsQuestionLg} from "react-icons/bs"
-import { searchPokemon } from '../../api'
+import { searchPokemon } from '../../services/api'
 
 export default function SearchBar(){
     let [search, setSearch] = useState('')
@@ -17,7 +17,6 @@ export default function SearchBar(){
     }
 
     const onSearchHandler = async (pokemon) => {
-
         if(!pokemon){
             //inserir um modal depois
             console.log('nenhum pokemon informado') 
@@ -25,7 +24,6 @@ export default function SearchBar(){
 
         const result = await searchPokemon(pokemon)
         setPokemon(result)        
-
     }
 
     return(

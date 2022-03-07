@@ -1,0 +1,11 @@
+.pokedex{
+    padding-top: 100px;
+    width: 100%;
+}
+
+.pokedex-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
