@@ -1,4 +1,5 @@
 import './pokemon-card-list.css'
+import {MdFavoriteBorder} from 'react-icons/md'
 
 export default function PokemonCardList(props){
     const {pokemon} = props
@@ -20,6 +21,8 @@ export default function PokemonCardList(props){
                         )
                     })}
                 </div>
+
+                <button className='favorite'><MdFavoriteBorder size={22}/></button>
 
             </div>
         </div>

@@ -53,6 +53,17 @@
 
 }
 
+.favorite{
+ align-self: flex-end;
+
+ padding-right: 5px;
+ padding-bottom: 10px;
+ background: transparent;
+ border: none;
+ outline: none;
+ cursor: pointer;
+}
+
 
 /* cores das tags type */
 .type-fire{
