@@ -1,22 +1,35 @@
 import PokemonCardList from '../PokemonCardList'
 import './pokedex.css'
-import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
+import Pagination from '../Pagination'
 
 export default function Pokedex(props){
-    const {pokemonsList, loading} = props
+    const {pokemonsList, loading, page, setPage, totalPages} = props
     console.log(pokemonsList)
+
+    const previousClick = () => {
+        if(page > 0){
+            setPage(page-1)
+        }
+    }
+
+    const nextClick = () => {
+        if(page !== totalPages){
+            setPage(page+1)
+        }
+    }
+
 
     return(
         <main className="pokedex">
 
             <div className='pokedex-top'>
                 <h1 className="pokedex-title">POKEDEX</h1>
-
-                <div className="pagination">
-                    <button className='pag-prev arrows'><FaArrowLeft size={28}/></button>
-                    <button className='pag-next arrows'><FaArrowRight size={28}/></button>
-                    <span className='pag-info'></span>
-                </div>
+                <Pagination
+                    page={page+1}
+                    totalPages={totalPages}
+                    previousClick={previousClick}
+                    nextClick={nextClick}
+                />
             </div>
             
             {loading ? (

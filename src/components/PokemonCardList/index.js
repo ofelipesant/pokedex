@@ -5,7 +5,7 @@ export default function PokemonCardList(props){
     return(
         <div className="pokemon-card-list">
             <div className="pokemon-image-content">
-                <img alt={pokemon.name} src={pokemon.sprites.front_default}/>
+                <img alt={pokemon.name} src={pokemon.sprites.front_default} loading='lazy'/>
             </div>
             <div className="pokemon-info">
                 <span className="pokemon-position">#{pokemon.id}</span>

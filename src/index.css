@@ -7,16 +7,16 @@
  --blue: #5495e1; 
  --blue-hover: #0068af;
 
- --fire-tag: #d8572a;
- --poison-tag: #822faf;
- --grass-tag: #588157;
- --water-tag: #0096c7;
- --bug-tag: #aaba78;
- --eletric-tag: #edc531;
- --ground-tag: #926c15;
- --flying-tag: #90e0ef;
- --fairy-tag: #ffafcc;
- --normal-tag: #c9ada7;
+ --fire-tag: linear-gradient(to right bottom,#c20020 35%, #e65f2e 75%);
+ --poison-tag: linear-gradient(to right bottom, #47126b 35%, #973aa8 75%);
+ --grass-tag: linear-gradient(to right bottom, #344e41 35%,#649663 80%);
+ --water-tag: linear-gradient(to right bottom,#0096c7 35%, #023e8a 80%);
+ --bug-tag: linear-gradient(to right bottom, #db9d57 35%, #aaba78 80%);
+ --eletric-tag: linear-gradient(to right bottom,#ffe169 35%,#edc531 80%);
+ --ground-tag: linear-gradient(to right bottom, #805b10 35%,#c9a227 80%);
+ --flying-tag: linear-gradient(to right bottom, #26a96c 35%, #85cbd8 80%);
+ --fairy-tag: linear-gradient(to right bottom, #cdb4db 35%, #ffafcc 80%);
+ --normal-tag: linear-gradient(to right bottom, #9a8c98 35%, #c9ada7 80%);
 
 
 }
