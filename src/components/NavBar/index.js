@@ -8,6 +8,7 @@ export default function NavBar(){
     return(
         <header className='cabecalho'>
             <img  className='logo' alt='pokedex-logo' src={pokeLogo}/>
+            <div className='favorites'>FAVORITOS</div>
             <SearchBar/>
            
            <div className='theme-container'>
