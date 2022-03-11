@@ -17,8 +17,9 @@
  --flying-tag: linear-gradient(to right bottom, #26a96c 35%, #85cbd8 80%);
  --fairy-tag: linear-gradient(to right bottom, #cdb4db 35%, #ffafcc 80%);
  --normal-tag: linear-gradient(to right bottom, #9a8c98 35%, #c9ada7 80%);
-
-
+ --fighting-tag: linear-gradient(to right bottom, #47126b 35%, #9a8c98 80%);
+ --psychic-tag: linear-gradient(to left bottom, #47126b 30%, #ffe169 80%);
+ 
 }
 
 *{

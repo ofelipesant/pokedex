@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import NavBar from './components/NavBar'
 import Pokedex from './components/Pokedex'
 import { getDataPokemon, getPokemons } from './services/api'
+import Footer from './components/Footer'
 
 export default function App() { 
   const [loading, setLoading] = useState(false)
@@ -48,6 +49,8 @@ export default function App() {
         totalPages={totalPages}
         setPage={setPage}
       />
+
+      <Footer/>
 
     </div>
   );

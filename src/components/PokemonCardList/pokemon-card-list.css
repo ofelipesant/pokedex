@@ -105,3 +105,11 @@
 .type-normal{
     background-image: var(--normal-tag);
 }
+
+.type-fighting{
+    background-image: var(--fighting-tag)
+}
+
+.type-psychic{
+    background-image: var(--psychic-tag)
+}

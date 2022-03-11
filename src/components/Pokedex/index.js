@@ -33,7 +33,7 @@ export default function Pokedex(props){
             </div>
             
             {loading ? (
-                <div>CARREGANDO</div> /* trocar para um modal ou tela de loading */
+                <div className='loading'></div> /* trocar para um modal ou tela de loading */
                 ) : (
                 <div className='pokedex-grid'>
                     {pokemonsList && pokemonsList.map((pokemon, index) => {

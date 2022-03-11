@@ -1,0 +1,36 @@
+.footer{
+    height: 80px;
+    width: 100%;
+    font-family: 'Lato';
+    font-weight: 300;
+    background: #044977;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+.icon-footer{
+    color: white;
+    padding: 0 5px;
+}
+
+.footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer > p > a:hover{
+    text-decoration: underline;
+}
