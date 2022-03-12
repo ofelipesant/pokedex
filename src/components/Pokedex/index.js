@@ -4,7 +4,6 @@ import Pagination from '../Pagination'
 
 export default function Pokedex(props){
     const {pokemonsList, loading, page, setPage, totalPages} = props
-    console.log(pokemonsList)
 
     const previousClick = () => {
         if(page > 0){
