@@ -1,10 +1,11 @@
 import SearchBar from '../SearchBar'
 import './nav-bar.css'
-import {BsMoonStarsFill, BsFillSunFill} from 'react-icons/bs'
+import {BsFillSunFill} from 'react-icons/bs'
 import { useState, useContext } from 'react'
 import FavoriteContext from '../../contexts/favoritesContext'
 import { searchPokemon } from '../../services/api'
 import NotFoundModal from '../modals/NotFoundModal'
+import { changeTheme } from '../../services/theme'
 
 export default function NavBar(props){
     const {fetchPokemons, setLoading, setPokemonsList, setPage, setTotalPages} = props
@@ -45,11 +46,18 @@ export default function NavBar(props){
             {notFound && <NotFoundModal/>}
 
            <div className='theme-container'>
-               <button className='theme-icon'>
+
+               <label>
+                   <input 
+                   type="checkbox"
+                   className='theme-icon'
+                   onChange={changeTheme}
+                   />
+                </label>
+
                    <BsFillSunFill 
-                        size={24}
-                        color={'#fff'}/>
-                </button>
+                    size={24}
+                    color={'#fff'}/>
            </div>
            
         </header>

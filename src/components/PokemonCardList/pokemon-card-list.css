@@ -7,9 +7,10 @@
     margin-bottom: 30px;
     transition: .4s;
     cursor: pointer;
-    background-color: #f4f3ee;
+    background-color: var(--card-color);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    color: var(--text-color);
 
     display: flex;
 
@@ -55,6 +56,7 @@
 
 .favorite{
  align-self: flex-end;
+ color: var(--text-color);
 
  padding-right: 5px;
  padding-bottom: 10px;
@@ -112,4 +114,28 @@
 
 .type-psychic{
     background-image: var(--psychic-tag)
+}
+
+.type-rock{
+    background-image: var(--rock-tag);
+}
+
+.type-ice{
+    background-image: var(--ice-tag);
+}
+
+.type-steel{
+    background-image: var(--steel-tag);
+}
+
+.type-ghost{
+    background-image: var(--ghost-tag);
+}
+
+.type-dragon{
+    background-image: var(--dragon-tag);
+}
+
+.type-dark{
+    background-image: var(--dark-tag);
 }

@@ -21,11 +21,11 @@
 }
 
 .theme-icon{
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 5px 10px;
-    cursor: pointer;
+   position: absolute;
+   right: 35px;
+   top: 32px;
+   opacity: 0;
+   cursor: pointer;
 }
 
 .favorites{

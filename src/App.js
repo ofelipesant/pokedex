@@ -75,7 +75,7 @@ export default function App() {
         }
       }>
 
-    <div>
+    <>
       <NavBar
        fetchPokemons={fetchPokemons}
        setLoading={setLoading}
@@ -95,7 +95,7 @@ export default function App() {
 
       <Footer/>
 
-    </div>
+    </>
 
     </FavoriteProvider>
   );

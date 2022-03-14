@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-:root{
+[data-theme="light"]{
  --red: #ef233c;
  --blue: #5495e1; 
  --blue-hover: #0068af;
+ --bg-color: #fff;
+ --card-color: #f4f3ee;
+ --text-color: #000;
 
  --fire-tag: linear-gradient(to right bottom,#c20020 35%, #e65f2e 75%);
  --poison-tag: linear-gradient(to right bottom, #47126b 35%, #973aa8 75%);
@@ -19,6 +22,42 @@
  --normal-tag: linear-gradient(to right bottom, #9a8c98 35%, #c9ada7 80%);
  --fighting-tag: linear-gradient(to right bottom, #47126b 35%, #9a8c98 80%);
  --psychic-tag: linear-gradient(to left bottom, #47126b 30%, #ffe169 80%);
+ --rock-tag: linear-gradient(to right bottom, #afa193 35%, #dde1df 80%);
+ --ice-tag: linear-gradient(to right bottom, #6096ba 35%, #bfdbf7 80%);
+ --steel-tag: linear-gradient(to right bottom, #474b4b 35%, #6c6f6f 80%);
+ --ghost-tag: linear-gradient(to right bottom, #32004f 35%, #190028 80%);
+ --dragon-tag: linear-gradient(to right bottom, #2a9d8f 35%, #457b9d 80%);
+ --dark-tag: linear-gradient(to right bottom, #353535 35%, #284b63 80%);
+ 
+}
+
+[data-theme="dark"]{
+ --red: #810b18;
+ --blue: #5495e1; 
+ --blue-hover: #0068af;
+ --bg-color: #002029;
+ --card-color: #494949;
+ --text-color: #fff;
+
+
+ --fire-tag: linear-gradient(to right bottom,#c20020 35%, #e65f2e 75%);
+ --poison-tag: linear-gradient(to right bottom, #47126b 35%, #973aa8 75%);
+ --grass-tag: linear-gradient(to right bottom, #344e41 35%,#649663 80%);
+ --water-tag: linear-gradient(to right bottom,#0096c7 35%, #023e8a 80%);
+ --bug-tag: linear-gradient(to right bottom, #db9d57 35%, #aaba78 80%);
+ --eletric-tag: linear-gradient(to right bottom,#ffe169 35%,#edc531 80%);
+ --ground-tag: linear-gradient(to right bottom, #805b10 35%,#c9a227 80%);
+ --flying-tag: linear-gradient(to right bottom, #26a96c 35%, #85cbd8 80%);
+ --fairy-tag: linear-gradient(to right bottom, #cdb4db 35%, #ffafcc 80%);
+ --normal-tag: linear-gradient(to right bottom, #9a8c98 35%, #c9ada7 80%);
+ --fighting-tag: linear-gradient(to right bottom, #47126b 35%, #9a8c98 80%);
+ --psychic-tag: linear-gradient(to left bottom, #47126b 30%, #ffe169 80%);
+ --rock-tag: linear-gradient(to right bottom, #afa193 35%, #dde1df 80%);
+ --ice-tag: linear-gradient(to right bottom, #6096ba 35%, #bfdbf7 80%);
+ --steel-tag: linear-gradient(to right bottom, #474b4b 35%, #6c6f6f 80%);
+ --ghost-tag: linear-gradient(to right bottom, #32004f 35%, #190028 80%);
+ --dragon-tag: linear-gradient(to right bottom, #2a9d8f 35%, #457b9d 80%);
+ --dark-tag: linear-gradient(to right bottom, #353535 35%, #284b63 80%);
  
 }
 
@@ -30,4 +69,5 @@
 body{
   width: 100%;
   height: 100vh;
+  transition: .4s;
 }
