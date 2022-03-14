@@ -6,11 +6,14 @@ import Footer from './components/Footer'
 import {FavoriteProvider} from './contexts/favoritesContext'
 
 export default function App() { 
+
   const [loading, setLoading] = useState(false)
   const [page, setPage] = useState(0)
   const [totalPages, setTotalPages] = useState(0)
   const [pokemonsList, setPokemonsList] = useState([])
   const [favorites, setFavorites] = useState([])
+
+  const favoritesKey = 'key'
 
   const fetchPokemons = async () =>{
     const itemsPerPage = 51
@@ -34,9 +37,10 @@ export default function App() {
     }
   }
 
-  useEffect(()=>{
-    fetchPokemons()
-  }, [page])
+  const loadFavoritePokemons = () => {
+    const pokemonsLocalStorage = JSON.parse(window.localStorage.getItem(favoritesKey)) || []
+    setFavorites(pokemonsLocalStorage)
+  }
 
   const updateFavoritePokemon = (name) => {
     const updateFavorites = [...favorites]
@@ -47,8 +51,19 @@ export default function App() {
     } else{
       updateFavorites.push(name)
     }
-    setFavorites(updateFavorites)
+
+    window.localStorage.setItem(favoritesKey, JSON.stringify(updateFavorites))
+    setFavorites(updateFavorites) 
   }
+  
+  useEffect(()=>{
+    fetchPokemons()
+  }, [page])
+
+  useEffect(()=>{
+    loadFavoritePokemons()
+  }, [])
+
 
 
   return (
@@ -61,7 +76,14 @@ export default function App() {
       }>
 
     <div>
-      <NavBar/>
+      <NavBar
+       fetchPokemons={fetchPokemons}
+       setLoading={setLoading}
+       setPokemonsList={setPokemonsList}
+       setPage={setPage}
+       setTotalPages={setTotalPages}
+      
+      />
 
       <Pokedex 
         pokemonsList={pokemonsList} 
@@ -78,5 +100,3 @@ export default function App() {
     </FavoriteProvider>
   );
 }
-
-

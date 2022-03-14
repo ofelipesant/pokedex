@@ -6,7 +6,7 @@ import FavoriteContext from '../../contexts/favoritesContext'
 export default function PokemonCardList(props){
     const {pokemon} = props
     const {favoritePokemon ,updateFavoritePokemon} = useContext(FavoriteContext)
-    const favIcon = favoritePokemon.includes(pokemon.name) ? <MdFavorite size={20}/> : <MdFavoriteBorder size={20}/>
+    const favIcon = favoritePokemon && favoritePokemon.includes(pokemon.name) ? <MdFavorite size={20}/> : <MdFavoriteBorder size={20}/>
 
     const onFavoriteClick = () => {
         updateFavoritePokemon(pokemon.name)

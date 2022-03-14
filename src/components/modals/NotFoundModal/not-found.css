@@ -1,0 +1,27 @@
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 40px;
+    background-color: var(--red);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.116);
+    position: absolute;
+    top: 94px;
+    left: 400px;
+    transition: .4s;
+    margin-bottom: 10px;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    text-align: center;
+    color: white;
+
+}
