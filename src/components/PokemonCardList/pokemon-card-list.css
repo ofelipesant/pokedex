@@ -20,6 +20,10 @@
     transform: translateY(-10px);
 }
 
+.pokemon-name{
+    text-decoration: none;
+}
+
 .pokemon-info{
     width: 90%;
 
