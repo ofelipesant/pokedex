@@ -9,6 +9,7 @@
  --bg-color: #fff;
  --card-color: #f4f3ee;
  --text-color: #000;
+ --status-bar: #2a9d8f;
 
  --fire-tag: linear-gradient(to right bottom,#c20020 35%, #e65f2e 75%);
  --poison-tag: linear-gradient(to right bottom, #47126b 35%, #973aa8 75%);
@@ -38,6 +39,7 @@
  --bg-color: #002029;
  --card-color: #494949;
  --text-color: #fff;
+ --status-bar: #2a9d8f;
 
  --fire-tag: linear-gradient(to right bottom,#c20020 35%, #e65f2e 75%);
  --poison-tag: linear-gradient(to right bottom, #47126b 35%, #973aa8 75%);

@@ -16,12 +16,19 @@
 
 }
 
+.link{
+    text-decoration: none;
+}
+
 .pokemon-card-list:hover{
     transform: translateY(-10px);
 }
 
-.pokemon-name{
-    text-decoration: none;
+.pokemon-image-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .pokemon-info{
