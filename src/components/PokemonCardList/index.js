@@ -15,10 +15,10 @@ export default function PokemonCardList(props){
     }
 
     return(
-        <Link to={`/${pokemon.name}`}>
+        <Link to={`/${pokemon.name}`} className='link'>
             <div className="pokemon-card-list">
                 <div className="pokemon-image-content">
-                    <img alt={pokemon.name} src={pokemon.sprites.front_default} loading='lazy'/>
+                    <img alt={pokemon.name} src={`../images/animated/${pokemon.id}.gif`} loading='lazy' className='pokemon-image'/>
                 </div>
                 <div className="pokemon-info">
                     <span className="pokemon-position">#{pokemon.id}</span>

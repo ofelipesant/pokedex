@@ -1,0 +1,49 @@
+.cabecalho{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--red);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.295);
+    font-family: 'Lato';
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{  
+    padding: 10px;
+    width: 150px;
+}
+
+.theme-container{
+    padding-right: 30px;
+    justify-self: flex-end;
+}
+
+.theme-icon{
+   position: absolute;
+   right: 35px;
+   top: 32px;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.navigation{
+    width: 100%;
+    height: 30px;
+    padding-top: 100px;
+    background-color: var(--bg-color);
+}
+
+.back-arrow{
+    color: var(--text-color);
+    padding-left: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.back-arrow:hover{
+    transform: translateX(-10px);
+}
+
