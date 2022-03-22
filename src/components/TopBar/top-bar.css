@@ -11,6 +11,7 @@
     justify-content: space-between;
 }
 
+
 .logo{  
     padding: 10px;
     width: 150px;
@@ -34,6 +35,15 @@
     height: 30px;
     padding-top: 100px;
     background-color: var(--bg-color);
+    font-family: "Lato";
+}
+
+.link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 25px;
 }
 
 .back-arrow{
@@ -47,3 +57,9 @@
     transform: translateX(-10px);
 }
 
+.prev-text{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    padding-left: 10px;
+}

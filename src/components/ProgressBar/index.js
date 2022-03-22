@@ -31,6 +31,7 @@ const ProgressBarStyled = styled.div`
 .progress-bar{
     position: relative;
     width: 95%;
+    animation: slideX 1.1s;
 }
 
 span{
@@ -41,5 +42,16 @@ span{
     height: 0.6rem;
     background-color: var(--status-bar);
     border-radius: 0 20px 20px 0;
+}
+
+@keyframes slideX{
+ from{
+    width: 0;
+    
+ }
+
+ to{
+    width: 95%;
+ }
 }
 `

@@ -31,8 +31,8 @@ export default function NavBar(){
 
         <div className='navigation'>
         
-            <Link to={"/"}>
-                <MdArrowBackIosNew size={26} className='back-arrow'/>
+            <Link to={"/"} className='link'>
+                <MdArrowBackIosNew size={26} className='back-arrow'/> <span className='prev-text'>Voltar</span>
             </Link>
 
         </div>
