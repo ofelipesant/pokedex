@@ -11,13 +11,17 @@
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: var(--text-color);
+    position: relative;
 
     display: flex;
 
 }
 
 .link{
+    width: 100%;
     text-decoration: none;
+    color: var(--text-color);
+    padding: 0 !important;
 }
 
 .pokemon-card-list:hover{
@@ -40,7 +44,10 @@
 
 .pokemon-position{
     align-self: flex-end;
-    padding-right: 5px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
 }
 
 .pokemon-type{
@@ -69,8 +76,7 @@
  align-self: flex-end;
  color: var(--text-color);
 
- padding-right: 5px;
- padding-bottom: 10px;
+ 
  background: transparent;
  border: none;
  outline: none;

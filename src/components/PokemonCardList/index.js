@@ -15,8 +15,8 @@ export default function PokemonCardList(props){
     }
 
     return(
-        <Link to={`/${pokemon.name}`} className='link'>
-            <div className="pokemon-card-list">
+        <div className="pokemon-card-list">
+            <Link to={`/${pokemon.name}`} className='link'>
                 <div className="pokemon-image-content">
                     <img alt={pokemon.name} src={`../images/animated/${pokemon.id}.gif`} loading='lazy' className='pokemon-image'/>
                 </div>
@@ -32,9 +32,9 @@ export default function PokemonCardList(props){
                             )
                         })}
                     </div>
-                    <button className='favorite' onClick={onFavoriteClick}>{favIcon}</button>
                 </div>
-        </div>
         </Link>
+        <button className='favorite' onClick={onFavoriteClick}>{favIcon}</button>
+        </div>
     )
 }
