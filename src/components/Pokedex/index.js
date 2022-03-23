@@ -1,6 +1,7 @@
 import PokemonCardList from '../PokemonCardList'
 import './pokedex.css'
 import Pagination from '../Pagination'
+import Loading from '../Loading'
 
 export default function Pokedex(props){
     const {pokemonsList, loading, page, setPage, totalPages} = props
@@ -32,7 +33,9 @@ export default function Pokedex(props){
             </div>
             
             {loading ? (
-                <div className='loading'></div> /* trocar para um modal ou tela de loading */
+              
+                   <Loading/>  
+               
                 ) : (
                 <div className='pokedex-grid'>
                     {pokemonsList && pokemonsList.map((pokemon, index) => {
