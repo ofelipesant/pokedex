@@ -88,3 +88,32 @@
        opacity: 100%;
     }
    }
+
+/* MOBILE */
+@media(max-width: 414px){
+    .search-bar{
+        margin-top: 50px;
+        margin-left: 150px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .search-input{
+        width: 175px;
+        height: 18px;
+    }
+
+    .button-search{
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-button{
+        display: none;
+    }
+
+    .search-input:focus{
+       width: 175px; 
+        border: none;
+    }
+}

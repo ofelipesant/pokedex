@@ -156,3 +156,10 @@
 .type-dark{
     background-image: var(--dark-tag);
 }
+
+/* MOBILE */
+@media(max-width: 414px){
+    .pokemon-card-list{
+        width: 300px;
+    }
+}

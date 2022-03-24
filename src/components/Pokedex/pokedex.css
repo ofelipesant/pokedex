@@ -41,3 +41,10 @@
     height: 200vh;
 }
 
+/* MOBILE */
+@media(max-width: 414px){
+    .pokedex{
+        padding-top: 95px !important;
+    }
+}
+
