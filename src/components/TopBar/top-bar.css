@@ -63,3 +63,18 @@
     font-size: 18px;
     padding-left: 10px;
 }
+
+@media(max-width: 414px){
+    .top-bar-mobile{
+        height: 60px !important;
+    }
+
+    .logo-mobile{
+        padding: none;
+        top: 0;
+    }
+
+    .nav-mobile{
+        padding-top: 70px;
+    }
+}

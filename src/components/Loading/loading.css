@@ -18,3 +18,14 @@
     padding-top: 15px;
 }
 
+/* MOBILE */
+@media(max-width: 414px){
+    .loading-container{
+        margin-top: 150px;
+    }
+    
+    .loading-image{
+        width: 50%;
+    }
+}
+

@@ -13,8 +13,8 @@ export default function NavBar(){
 
         <header className='top-bar'>
 
-        <div className="cabecalho">
-            <img  className='logo' alt='pokedex-logo' src={pokeLogo}/>
+        <div className="cabecalho top-bar-mobile">
+            <img  className='logo logo-mobile' alt='pokedex-logo' src={pokeLogo}/>
                <div className='theme-container'>
                    <label>
                        <input
@@ -29,7 +29,7 @@ export default function NavBar(){
                </div>
         </div>
 
-        <div className='navigation'>
+        <div className='navigation nav-mobile'>
         
             <Link to={"/"} className='link'>
                 <MdArrowBackIosNew size={26} className='back-arrow'/> <span className='prev-text'>Voltar</span>

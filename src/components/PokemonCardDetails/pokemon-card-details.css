@@ -36,9 +36,9 @@
 
 .pokemon-sprite{
     width: 50%;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
-    top: -55px;
+    bottom: 0;
 }
 
 .infos-geral{
@@ -101,4 +101,29 @@
 .status-title{
     text-align: center;
     padding-top: 20px;
+}
+
+/* MOBILE */
+@media(max-width: 414px){
+   .pokemon-details{
+       min-height: 120vh;
+   } 
+
+   .pokemon-infos{
+       margin-top: 40px;
+       min-width: 280px;
+   }
+
+   .pokemon-sprite{
+       top: -70px;
+   }
+
+   .pokemon-status{
+       margin: -10px;
+   }
+
+   .status{
+       box-shadow: none;
+   }
+
 }
